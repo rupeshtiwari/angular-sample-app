@@ -2,7 +2,7 @@
   "name": "approval-structure-app",
   "version": "0.0.0",
   "scripts": {
-    "build:prd": "ng build --prod --base-href /angular-sample-app/",
+    "build:prd": "ng build --prod --base-href /coding-examples-angular-sample-app/",
     "ng": "ng",
     "start": "ng serve -o",
     "build": "ng build",
