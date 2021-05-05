@@ -2,14 +2,13 @@
   "name": "approval-structure-app",
   "version": "0.0.0",
   "scripts": {
-    "build:prd": "ng build --prod --output-hashing none",
+    "build:prd": "ng build --prod --base-href '/angular-sample-app'",
     "ng": "ng",
     "start": "ng serve -o",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "db": "json-server --watch db.json"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
