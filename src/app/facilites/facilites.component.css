@@ -1,0 +1,29 @@
+
+.view {
+  cursor: pointer;
+}
+
+th {
+  font-size: 18px;
+}
+
+.activeFacility {
+  transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: gray
+}
+
+.card {
+  max-width: 100%;
+  box-shadow: none;
+}
+
+.w-action,
+.w-name,
+.w-division {
+  width: 200px;
+}
+
+.w-action {
+  width: 50px;
+}

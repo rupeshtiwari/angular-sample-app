@@ -1,0 +1,58 @@
+<mat-card class="card" [ngClass]="{'working':isSaving}">
+    <mat-card-header>
+        <mat-card-title>
+            <mat-icon color="primary">
+                local_police
+            </mat-icon>
+            <span class="heading">
+                {{header}}
+            </span>
+
+        </mat-card-title>
+
+    </mat-card-header>
+    <mat-divider class="sa-divider">
+
+    </mat-divider>
+    <mat-card-content class="sa-content">
+        <div>
+            <mat-form-field appearance="fill" class="w-100">
+                <mat-label>Minimum Cost</mat-label>
+                <input placeholder="0 or More only" #cost="ngModel" min="0" name="cost" type="number" required matInput type="text"
+                    [(ngModel)]="minimumCost">
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="w-100">
+                <mat-label>Level</mat-label>
+                <mat-label>Select Level</mat-label>
+                <mat-select #level="ngModel" name="level" required [(ngModel)]="selectedLevel">
+                    <mat-option *ngFor="let level of allLevels" [value]="level">{{level}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="fill" class="w-100">
+                <mat-label>Select Approver</mat-label>
+                <mat-select #approver="ngModel" name="approver" required [(ngModel)]="selectedApproverId">
+                    <mat-option *ngFor="let approver of allApprovers" [value]="approver.id">{{approver.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+        <button (click)="save($event)" mat-raised-button color="primary"
+            [disabled]="cost.errors?.required || level.errors?.required || approver.errors?.required || minimumCost <0">
+            <mat-icon>save</mat-icon>
+            Save
+        </button>
+        <button (click)="close($event)" mat-button color="secondary">
+            <mat-icon>close</mat-icon>
+            No Thanks
+        </button>
+
+
+    </mat-card-actions>
+    <mat-spinner class="spinner" *ngIf="isSaving" style="text-align: center;"></mat-spinner>
+
+
+</mat-card>

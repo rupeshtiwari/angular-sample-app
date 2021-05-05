@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+table {
+  width: 100%;
+
+}
+
+.mat-icon {
+  font-size: 1.2rem;
+}
+
+.spinner {
+  margin: 0 auto;
+  zoom: 0.8;
+ 
+}
+
+.card {
+  max-width: 100%;
+  box-shadow: none;
+}
+
+.instruction {
+  animation: fade_in_show 2s;
+}
+
+@keyframes fade_in_show {
+  0% {
+    opacity: 0;
+    transform: scale(0)
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1)
+  }
+}

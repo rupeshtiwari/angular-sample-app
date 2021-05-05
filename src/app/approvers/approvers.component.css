@@ -1,0 +1,48 @@
+ .view {
+   cursor: pointer;
+ }
+
+ th {
+   font-size: 18px;
+ }
+
+ .w-level {
+   width: 100px;
+ }
+
+ .card {
+   max-width: 100%;
+   box-shadow: none;
+ }
+
+ .w-name {
+   width: 200px;
+ }
+
+ .w-mc {
+   width: 200px;
+ }
+
+ .w-action {
+   width: 200px;
+ }
+
+ .action {
+   display: flex;
+   justify-content: space-between;
+   width: 220px;
+ }
+
+ .division,
+ .facilityName {
+   transform: uppercase;
+   letter-spacing: 0.2rem;
+   color: gray
+ }
+
+ table {
+   margin-top: 1.2rem;
+ }
+
+
+ 

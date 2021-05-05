@@ -1,0 +1,8 @@
+{
+    "/*": {
+      "target": "http://intranetus/Capital/approverstructure.aspx/",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin": true
+    }
+  }

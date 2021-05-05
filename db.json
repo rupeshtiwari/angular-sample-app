@@ -1,0 +1,19 @@
+{
+  "facilities": [
+    {
+      "division": "Plastics",
+      "name": "East Brunswick",
+      "facilityId": 1
+    },
+    {
+        "division": "Metal",
+        "name": "Woodbridge",
+        "facilityId": 2
+      },
+      {
+        "division": "Fiber",
+        "name": "Chicago",
+        "facilityId": 3
+      }
+  ]
+}
